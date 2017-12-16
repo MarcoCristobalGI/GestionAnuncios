@@ -1,0 +1,2 @@
+module PageGasfiteriaHelper
+end

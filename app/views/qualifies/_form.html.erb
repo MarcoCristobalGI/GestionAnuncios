@@ -1,0 +1,13 @@
+<%= simple_form_for @qualify, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.association :worker %>
+  <%= f.error_span(:worker_id) %>
+  <%= f.association :score,:include_blank => false, :label_method => lambda { |score| "#{score.id} | #{score.description}" } %>
+  
+  <%= f.error_span(:score_id) %>
+  <%= f.input :description %>
+  <%= f.error_span(:description) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                qualifies_path, :class => 'btn btn-default' %>
+<% end %>

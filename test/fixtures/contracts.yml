@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jobadvert_id: 
+  worker_id: 
+  begin: 2017-12-02
+  end: 2017-12-02
+  descripction: MyText
+  salary: 1.5
+
+two:
+  jobadvert_id: 
+  worker_id: 
+  begin: 2017-12-02
+  end: 2017-12-02
+  descripction: MyText
+  salary: 1.5

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  worker_id: 
+  score_id: 
+  description: MyText
+
+two:
+  worker_id: 
+  score_id: 
+  description: MyText

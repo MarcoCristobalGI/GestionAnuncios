@@ -1,0 +1,18 @@
+<%= simple_form_for @jobadvert, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :title %>
+  <%= f.error_span(:title) %>
+  <%= f.input :description %>
+  <%= f.error_span(:description) %>
+  <%= f.input :vacancies %>
+  <%= f.error_span(:vacancies) %>
+  <%= f.association :employer %>
+  <%= f.error_span(:employer_id) %>
+  <%= f.association :category %>
+  <%= f.error_span(:category_id) %>
+  <%= f.association :city %>
+  <%= f.error_span(:city_id) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                jobadverts_path, :class => 'btn btn-default' %>
+<% end %>
